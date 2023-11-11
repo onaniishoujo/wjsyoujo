@@ -11,56 +11,37 @@
             background-image: url('https://t.mwm.moe/ycy/');
             background-size: cover;
             background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .banner {
-            position: relative;
+
+        .container {
             width: 100%;
-            height: 400px;
-            background-image: url('banner.jpg');
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            box-sizing: border-box;
         }
+
         h1 {
             margin-bottom: 20px;
         }
+
         p {
             font-size: 20px;
             margin-bottom: 20px;
         }
+
         .heart {
             color: red;
             font-size: 30px;
         }
-
-        /* 响应式设计 */
-        @media (max-width: 600px) {
-            h1, p {
-                margin: auto;
-            }
-        }
-
-        /* 美化评论区 */
-        #vcomments {
-            border: 1px solid #ccc;
-            padding: 20px;
-            width: 80%;
-            margin: auto;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-        }
-
-        .banner, #vcomments {
-            width: 100%;
-            margin: auto;
-        }
     </style>
 </head>
 <body>
-    <div class="banner">
+    <div class="container">
         <h1>亲爱的王鸡</h1>
         <p>我一直在寻找能让我心动的人，而那个人就是你。你的笑容，你的眼神，你的一切都让我深深陷入无尽的思念和热烈的爱意之中。我不知道这是否叫做爱情，但我确信，你就是我生命中最重要的存在。</p>
         <p>我喜欢你，希望我们能一起走下去。</p>
@@ -68,6 +49,8 @@
         <p><a href="wjcomments">评论区</a></p>
     </div>
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <div class="container">
+        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    </div>
 </body>
 </html>
