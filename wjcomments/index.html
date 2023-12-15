@@ -24,6 +24,7 @@
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 </head>
 <body>
     <div class="instructions">
@@ -32,7 +33,8 @@
         <a href="https://onaniisyoujo.github.io/wj.github.io/">回到主页</a>
     </div>
     <div id="vcomments"></div>
-    <script src="//cdn.bootcdn.net/ajax/libs/valine/1.5.1/Valine.min.js"></script>
+    <script src="https://unpkg.com/valine/dist/Valine.min.js">
+    </script>
     <script>
         new Valine({
             el: '#vcomments',
